@@ -1,5 +1,4 @@
 /*
-177
 https://leetcode.com/problems/nth-highest-salary/
 
 Write a SQL query to get the nth highest salary
@@ -39,7 +38,7 @@ INSERT INTO Employee (Id, Salary) VALUES
 SET N = N - 1;
 SELECT DISTINCT Salary
 FROM Employee
-ORDER BY Salary DESC 
+ORDER BY Salary DESC
 LIMIT 1 OFFSET N
 
 /*

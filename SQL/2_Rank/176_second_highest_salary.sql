@@ -1,5 +1,4 @@
 /*
-176
 https://leetcode.com/problems/second-highest-salary/
 
 Write a SQL query to get the second highest salary

@@ -1,17 +1,17 @@
 Listing as of 2020-02-17
 
-Joins
+Join
 175. Combine Two Tables
 
-Ranks
+Rank
 176. Second Highest Salary
+177. Nth Highest Salary
+178. Rank Scores
+180. Consecutive Numbers
 
 Management
 
 To Do/Organize
-177. Nth Highest Salary
-178. Rank Scores
-180. Consecutive Numbers
 181. Employees Earning More Than Their Managers
 182. Duplicate Emails
 183. Customers Who Never Order
