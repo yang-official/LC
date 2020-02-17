@@ -1,0 +1,13 @@
+Listing as of 2020-02-17
+
+Lists and Strings
+
+Multidimensional Lists, Intervals, and Matrices
+
+Linked Lists
+
+Trees and Graphs
+
+Binary
+
+Object Oriented Programming
