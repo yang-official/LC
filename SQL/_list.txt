@@ -5,6 +5,7 @@ Join
 181. Employees Earning More Than Their Managers
 183. Customers Who Never Order
 184. Department Highest Salary
+513. Game Play Analysis III
 
 Rank
 176. Second Highest Salary
@@ -18,6 +19,8 @@ Group
 196. Delete Duplicate Emails
 197. Rising Temperature
 262. Trips and Users
+511. Game Play Analysis I
+512. Game Play Analysis II
 
 To Do/Organize
 595. Big Countries
