@@ -1,15 +1,19 @@
+# Python
+
 Listing as of 2020-02-17
 
 Lists and Strings
 1. Two Sum
 3. Longest Substring Without Repeating Characters
 
-Multidimensional Lists, Intervals, and Matrices
+Intervals, and Matrices
 
 Linked Lists
 2. Add Two Numbers
 
 Trees and Graphs
+
+Dynamic Programming
 
 Binary
 
