@@ -25,9 +25,19 @@ Grouping and aggregating
 262. Trips and Users
 511. Game Play Analysis I
 512. Game Play Analysis II
+569. Median Employee Salary
+570. Managers with at Least 5 Direct Reports
 
 #### To Do/Organize
 Unsolved and uncategorized problems
+571. Find Median Given Frequency of Numbers
+574. Winning Candidate
+577. Employee Bonus
+578. Get Highest Answer Rate Question
+580. Count Student Number in Departments
+584. Find Customer Referee
+585. Investments in 2016
+586. Customer Placing the Largest Number of Orders
 595. Big Countries
 596. Classes More Than 5 Students
 601. Human Traffic of Stadium
