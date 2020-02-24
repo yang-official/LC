@@ -1,6 +1,5 @@
 /*
-An SQL Course
-SELECT basics
+SELECT
 SUM and COUNT
 JOIN
 NULL
@@ -8,14 +7,8 @@ Self JOIN
 */
 
 /*
-name	continent	area 	population	gdp
-Afghanistan	Asia	652230	25500100	20343000000
-Albania	Europe	28748 	2831741 	12960000000
-Algeria	Africa	2381741 	37100000 	188681000000
-Andorra	Europe	468	78115 	3712000000
-Angola	Africa	1246700 	20609294 	100990000000
+SELECT (the basics)
 */
-
 -- WHERE clause
 SELECT population FROM world WHERE name = 'Germany';
 -- IN clause
@@ -67,6 +60,10 @@ SELECT * FROM nobel WHERE (subject = 'Medicine' AND yr < 1910) OR (subject = 'Li
 SELECT * FROM nobel WHERE winner = 'Eugene O\'neill'; -- escaping single quotes
 SELECT winner, yr, subject FROM nobel WHERE winner LIKE 'Sir%' ORDER BY yr DESC, winner; -- ORDER BY
 SELECT winner, subject FROM nobel WHERE yr = 1984 ORDER BY subject IN ('Physics','Chemistry'), subject, winner; -- numerical value of expressions
+
+/*
+SELECT in SELECT (subqueries)
+*/
 -- Subqueries, SELECT within SELECT
 SELECT name FROM world WHERE population > (SELECT population FROM world WHERE name='Russia');
 SELECT name FROM world WHERE continent = 'Europe' AND gdp/population > (SELECT gdp/population FROM world WHERE name = 'United Kingdom');
@@ -79,3 +76,49 @@ SELECT continent, name, area FROM world x WHERE area >= ALL (SELECT area FROM wo
 SELECT continent, name FROM world x WHERE name <= ALL (SELECT name FROM world y WHERE x.continent = y.continent);
 SELECT name,continent,population FROM world x WHERE 25000000 >= ALL (SELECT population FROM world y WHERE x.continent=y.continent AND y.population>0);
 SELECT name, continent FROM world x WHERE population > ALL (SELECT population*3 FROM world y WHERE y.continent = x.continent AND y.name != x.name);
+
+/*
+SUM and COUNT (aggregate functions)
+*/
+SELECT SUM(population) FROM world;
+SELECT DISTINCT continent FROM world;
+SELECT SUM(gdp) FROM world WHERE continent = 'Africa';
+SELECT COUNT(name) FROM world WHERE area >= 1000000;
+SELECT SUM(population) FROM world WHERE name IN ('Estonia','Latvia','Lithuania');
+-- using GROUP BY and HAVING
+SELECT continent, COUNT(name) FROM world GROUP BY continent;
+SELECT continent, COUNT(name) FROM world WHERE population >= 10000000 GROUP BY continent;
+SELECT continent FROM world GROUP BY continent HAVING SUM(population) >= 100000000;
+-- MAX, AVG, DISTINCT, ORDER BY
+SELECT COUNT(winner) FROM nobel;
+SELECT DISTINCT subject FROM nobel;
+SELECT COUNT(winner) FROM nobel WHERE subject = 'Physics';
+SELECT subject, COUNT(winner) FROM nobel GROUP BY subject;
+SELECT subject, MIN(yr) FROM nobel GROUP BY subject;
+SELECT subject, COUNT(winner) FROM nobel WHERE yr = 2000 GROUP BY subject;
+-- DISTINCT aggregates
+SELECT subject, COUNT(DISTINCT winner) FROM nobel GROUP BY subject;
+SELECT subject, COUNT(DISTINCT yr) FROM nobel GROUP BY subject;
+-- HAVING
+SELECT yr FROM nobel WHERE subject = 'Physics' GROUP BY yr HAVING COUNT(winner) = 3;
+SELECT winner FROM nobel GROUP BY winner HAVING COUNT(winner) > 1;
+SELECT winner FROM nobel GROUP BY winner HAVING COUNT(DISTINCT subject) > 1;
+SELECT yr, subject FROM nobel WHERE yr >= 2000 GROUP BY yr, subject HAVING COUNT(winner) = 3;
+
+/*
+JOIN
+*/
+SELECT player, teamid, stadium, mdate FROM game JOIN goal ON (id=matchid) WHERE teamid = 'GER';
+SELECT team1, team2, player FROM game JOIN goal ON id = matchid WHERE player LIKE 'Mario%';
+SELECT player, teamid, coach, gtime FROM goal JOIN eteam on teamid=id WHERE gtime<=10;
+SELECT mdate, eteam.teamname FROM game JOIN eteam ON team1 = eteam.id WHERE coach = 'Fernando Santos';
+SELECT player FROM goal JOIN game ON matchid = id WHERE stadium = 'National Stadium, Warsaw';
+SELECT DISTINCT player FROM game JOIN goal ON matchid = id WHERE (team1='GER' OR team2 = 'GER') AND teamid != 'GER';
+SELECT teamname, COUNT(player) FROM eteam JOIN goal ON id=teamid GROUP BY teamname ORDER BY teamname;
+SELECT stadium, COUNT(*) FROM game JOIN goal ON matchid = id GROUP BY stadium;
+SELECT matchid, mdate, COUNT(*) FROM game JOIN goal ON matchid = id WHERE (team1 = 'POL' OR team2 = 'POL') GROUP BY matchid;
+SELECT matchid, mdate, COUNT(*) FROM game JOIN goal ON matchid = id WHERE teamid = 'GER' GROUP BY matchid;
+-- CASE WHEN
+SELECT mdate, team1, SUM(CASE WHEN teamid = team1 THEN 1 ELSE 0 END) AS score1,
+       team2, SUM(CASE WHEN teamid = team2 THEN 1 ELSE 0 END) AS score2
+       FROM game LEFT JOIN goal ON (id = matchid) GROUP BY mdate,team1,team2 ORDER BY mdate, matchid, team1, team2;
