@@ -6,15 +6,15 @@
   3. Index Tracking
   4. Binary Search
   5. String Functions
-  6. Stack and Queues
-  7. Binary
-2. Intervals and Matrices
-  1. List of Lists
-  2. Matrix Rotations
-  3. Matrix Traversals
-3. Linked Lists
+  6. Intervals
+  7. Matrices
+  8. Binary
+2. Linked Lists
   1. Redirecting Next
   2. Fast and Slow Pointers
+3. Stacks and Queues
+  1. Stacks
+  2. Queues
 4. Trees and Graphs
   1. Tree Traversal by Iteration
   2. Tree Traversal by Recursion
@@ -39,6 +39,8 @@ Tracker
 | 6 | Zigzag Conversion | 1.3 Index Tracking |
 | 7 | Reverse Integer | 1.5 String Functions |
 | 8 | String to Integer | 1.5 String Functions |
+| 57 | Insert Interval | 1.6 Intervals |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 217 | Contains Duplicate | 1.1 Dictionary Storage |
+| 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 415 | Add Strings | 1.3 Index Tracking |
