@@ -33,6 +33,11 @@ Tracker
 | - | ---- | ---- |
 | 1 | Two Sum | 1.1 Dictionary Storage |
 | 2 | Add Two Numbers | 3.1 Redirecting Next|
-| 3 | Longest Substring Without Repeat Characters | 1.3 Index Tracking |
+| 3 | Longest Substring Without Repeating Characters | 1.3 Index Tracking |
+| 4 | Median of Two Sorted Arrays | 1.4 Binary Search |
+| 5 | Longest Palindromic Substring | 1.3 Index Tracking |
+| 6 | Zigzag Conversion | 1.3 Index Tracking |
+| 7 | Reverse Integer | 1.5 String Functions |
+| 8 | String to Integer | 1.5 String Functions |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 415 | Add Strings | 1.3 Index Tracking |
