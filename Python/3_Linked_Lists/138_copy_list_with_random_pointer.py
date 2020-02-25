@@ -8,6 +8,12 @@
 # random_index: the index of the node (range from 0 to n-1) where random pointer points to,
 # or null if it does not point to any node.
 
+# class Node:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+#         self.random = None
+
 def copyRandomList(head):
     d = {}
     prev, curr = None, head
