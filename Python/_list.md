@@ -35,11 +35,21 @@ Tracker
 | 6 | Zigzag Conversion | 1.3 Index Tracking |
 | 7 | Reverse Integer | 1.5 String Functions |
 | 8 | String to Integer | 1.5 String Functions |
+| 11 | Container with Most Water | 1.3 Index Tracking |
+| 15 | 3Sum | 1.3 Index Tracking |
+| 20 | Valid Parentheses | 3.1 Stacks |
+| 21 | Merge Two Sorted Lists | 2.1 Redirecting Nexts |
+| 23 | Merge k Sorted Lists | 2.1 Redirecting Nexts |
 | 39 | Combination Sum | 5 Dynamic Programming |
 | 57 | Insert Interval | 1.6 Intervals |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 151 | Reverse Words in a String | 1.5 String Functions |
+| 206 | Reverse Linked List | 2.1 Redirecting Nexts |
 | 217 | Contains Duplicate | 1.1 Dictionary Storage |
+| 225 | Implement Stack using Queues | 3.2 Queues |
+| 232 | Implement Queues using Stacks | 3.1 Stacks |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 415 | Add Strings | 1.3 Index Tracking |
+| 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
+| 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
 | 1304 | Find N Unique Integers Sum up to Zero | 1.3 Index Tracking |
