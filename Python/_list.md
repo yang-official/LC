@@ -42,6 +42,9 @@ Tracker
 | 23 | Merge k Sorted Lists | 2.1 Redirecting Nexts |
 | 39 | Combination Sum | 5 Dynamic Programming |
 | 57 | Insert Interval | 1.6 Intervals |
+| 97 | Interleaving Strings | 5 Dynamic Programming |
+| 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
+| 112 | Path Sum | 4.1 Tree Traversal |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 151 | Reverse Words in a String | 1.5 String Functions |
 | 206 | Reverse Linked List | 2.1 Redirecting Nexts |
@@ -49,6 +52,7 @@ Tracker
 | 225 | Implement Stack using Queues | 3.2 Queues |
 | 232 | Implement Queues using Stacks | 3.1 Stacks |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
+| 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
