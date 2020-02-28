@@ -55,5 +55,7 @@ Tracker
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
+| 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
+| 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
 | 1304 | Find N Unique Integers Sum up to Zero | 1.3 Index Tracking |
