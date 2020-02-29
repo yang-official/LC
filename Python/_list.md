@@ -42,6 +42,8 @@ Tracker
 | 23 | Merge k Sorted Lists | 2.1 Redirecting Nexts |
 | 39 | Combination Sum | 5 Dynamic Programming |
 | 57 | Insert Interval | 1.6 Intervals |
+| 70 | Climbing Stairs | 5 Dynamic Programming |
+| 78 | Subsets | 5 Dynamic Programming |
 | 97 | Interleaving Strings | 5 Dynamic Programming |
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
 | 112 | Path Sum | 4.1 Tree Traversal |
@@ -55,6 +57,7 @@ Tracker
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
+| 967 | Numbers with same consecutive differences | 5 Dynamic Programming |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |

@@ -23,13 +23,44 @@
 #   [3,5]
 # ]
 
-def cominationSum(candidates, target):
+# Iterative
+def combinationSum(candidates, target):
     result = []
-    pool = [([], 0)]
+    pool = [ ( [], 0 ) ]
     for n in candidates:
-        for (ls, v) in pool:
-            if v + n == target:
-                result.append(ls + [n])
-            elif v + n < target:
-                pool.append((ls + [n], v + n))
+        for intermediate, value in pool:
+            if value + n == target:
+                result.append(intermediate + [n])
+            elif value + n < target:
+                pool.append( (intermediate + [n], value + n) )
+    return result
+
+# Recursive
+def combinationSum(candidates, target):
+    def _combination(candidates, target, intermediate, result, i):
+        if target == 0:
+            result.append(list(intermediate))
+        while i < len(candidates) and candidates[i] <= target:
+            intermediate.append(candidates[i])
+            _combination(candidates, target - candidates[i], intermediate, result, i)
+            intermediate.pop()
+            i += 1
+    result = []
+    _combination(sorted(candidates), target, [], result, 0)
+    return result
+
+# Recursive refactored
+def combinationSum(candidates, target):
+    result = []
+    def _combination(intermediate, candidates):
+        if sum(intermediate) == target:
+            result.append(intermediate)
+            return True
+        elif sum(intermediate) > target:
+            return True
+        else:
+            for i, n in enumerate(candidates):
+                if _combination(intermediate + [n], candidates[i:]):
+                    break
+    _combination([], sorted(candidates))
     return result
