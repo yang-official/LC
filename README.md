@@ -1,2 +1,2 @@
 # LC
-Notes for the Little Cup. Algorithms in Python.
+Notes for the Little Cup.
