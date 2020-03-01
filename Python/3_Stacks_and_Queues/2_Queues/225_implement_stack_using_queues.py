@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/implement-stack-using-queues/
 # 225. Implement Stack using Queues
-
 # Implement the following operations of a stack using queues.
 #     push(x) -- Push element x onto stack.
 #     pop() -- Removes the element on top of the stack.
@@ -29,7 +28,6 @@ class MyStack:
         self.queue1.append(x)
         self._top = x
 
-
     def pop(self) -> int:
         while len(self.queue1) > 1:
             self._top = self.queue1.pop(0)
@@ -40,7 +38,6 @@ class MyStack:
 
     def top(self) -> int:
         return self._top
-
 
     def empty(self) -> bool:
         return len(self.queue1 == 0) and len(self.queue2 == 0)
