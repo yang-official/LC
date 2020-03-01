@@ -10,6 +10,22 @@
 # Input: "cbbd"
 # Output: "bb"
 
+# brute force O(n^2)
+def longestPalindrome(s):
+    if len(s) < 2:
+        return s
+    m = s[0]
+    for l in range(len(s)):
+        if len(s) - l < len(m):
+            break
+        for r in range(len(s), l, -1):
+            if s[l:r] == s[l:r][::-1]:
+                if r - l > len(m):
+                    m = s[l:r]
+                    break
+    return m
+
+# better
 def longestPalindrome(s):
     if len(s) < 2:
         return s

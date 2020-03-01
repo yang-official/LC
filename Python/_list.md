@@ -18,7 +18,7 @@
   1. Tree Traversal
   3. Graph Traversal
   4. Tries
-5. Dynamic Programming
+5. Dynamic Programming and Math
 6. Object Oriented Programming and System Design
   1. Object Oriented Programming
   2. System Design
@@ -37,6 +37,7 @@ Tracker
 | 8 | String to Integer | 1.5 String Functions |
 | 11 | Container with Most Water | 1.3 Index Tracking |
 | 15 | 3Sum | 1.3 Index Tracking |
+| 19 | Remove Nth Node from End of List | 2.2 Fast and Slow Pointers |
 | 20 | Valid Parentheses | 3.1 Stacks |
 | 21 | Merge Two Sorted Lists | 2.1 Redirecting Nexts |
 | 23 | Merge k Sorted Lists | 2.1 Redirecting Nexts |
@@ -44,7 +45,9 @@ Tracker
 | 57 | Insert Interval | 1.6 Intervals |
 | 70 | Climbing Stairs | 5 Dynamic Programming |
 | 73 | Set Matrix Zeros | 1.7 Matrices |
+| 76 | Minimum Window Substring | 1.3 Index Tracking |
 | 78 | Subsets | 5 Dynamic Programming |
+| 83 | Remove Duplicates from Sorted List | 2.1 Redirecting Nexts |
 | 90 | Subsets II | 5 Dynamic Programming |
 | 97 | Interleaving Strings | 5 Dynamic Programming |
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
@@ -56,6 +59,7 @@ Tracker
 | 217 | Contains Duplicate | 1.1 Dictionary Storage |
 | 225 | Implement Stack using Queues | 3.2 Queues |
 | 232 | Implement Queues using Stacks | 3.1 Stacks |
+| 237 | Delete Node in a Linked List | 2.1 Redirecting Nexts |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 390 | Elimination Game | 5 Dynamic Programming |
