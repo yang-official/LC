@@ -27,5 +27,5 @@ def subsets(nums):
 def subsets(nums):
     result = [[]]
     for n in nums:
-        result += [curr + [num] for curr in result]
+        result += [r + [num] for r in result]
     return result

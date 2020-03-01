@@ -45,6 +45,7 @@ Tracker
 | 70 | Climbing Stairs | 5 Dynamic Programming |
 | 73 | Set Matrix Zeros | 1.7 Matrices |
 | 78 | Subsets | 5 Dynamic Programming |
+| 90 | Subsets II | 5 Dynamic Programming |
 | 97 | Interleaving Strings | 5 Dynamic Programming |
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
 | 112 | Path Sum | 4.1 Tree Traversal |
@@ -57,6 +58,7 @@ Tracker
 | 232 | Implement Queues using Stacks | 3.1 Stacks |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
+| 390 | Elimination Game | 5 Dynamic Programming |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 416 | Partition Equal Subset Sum | 5 Dynamic Programming |
 | 442 | Find all duplicates in an array | 1.1 Dictionary Storage |
@@ -64,6 +66,7 @@ Tracker
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
 | 967 | Numbers with same consecutive differences | 5 Dynamic Programming |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
+| 991 | Broken Calculator | 5 Dynamic Programming |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
 | 1304 | Find N Unique Integers Sum up to Zero | 1.3 Index Tracking |
