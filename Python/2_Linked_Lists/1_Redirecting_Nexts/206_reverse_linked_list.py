@@ -30,3 +30,11 @@ def reverseList(head):
     head.next.next = head
     head.next = None
     return node
+
+# Variant, just print the reversed list
+# Recursive
+def printReversedList(head):
+    if not head:
+        return
+    printReversedList(head.next)
+    print(head.val)

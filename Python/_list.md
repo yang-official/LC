@@ -99,7 +99,7 @@ Byte by byte
 20. Reverse Stack
 21. Tree to Doubly Linked List
 22. Longest Consecutive Branch
-23. Print Reversed Linked List
+23. ~~Print Reversed Linked List ~ LC 206~~
 24. Balanced Binary Tree
 25. Binary Search Tree Verification
 26. Smallest Change
@@ -115,10 +115,10 @@ Byte by byte
 36. Rotate Bits
 37. Number of Ones in a Binary Number
 38. ~~Linked List cycles = LC 141~~
-39. Random Linked List
-40. Dedup Linked List
+39. ~~Random Linked List = LC 138~~
+40. ~~Dedup Linked List ~ LC 83~~
 41. ~~Split a Linked List ~ LC 725~~
-42. Nth to the Last Element
+42. ~~Nth to the Last Element ~ LC 19~~
 43. Three Sum
 44. Tree Level Order
 45. Autocomplete.

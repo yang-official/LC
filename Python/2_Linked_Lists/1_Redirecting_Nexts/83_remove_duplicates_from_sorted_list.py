@@ -24,3 +24,17 @@ def deleteDuplicates(head):
         else:
             curr = curr.next
     return head
+
+# Variant, unsorted linked list
+def deleteDuplicatesUnsorted(head):
+    if head is None:
+        return
+    seen = set()
+    curr = head
+    while curr.next:
+        seen.add(curr.val)
+        if curr.next.val in seen:
+            curr.next = curr.next.next
+        else:
+            curr = curr.next
+    return head
