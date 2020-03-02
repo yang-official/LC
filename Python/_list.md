@@ -19,9 +19,7 @@
   3. Graph Traversal
   4. Tries
 5. Dynamic Programming and Math
-6. Object Oriented Programming and System Design
-  1. Object Oriented Programming
-  2. System Design
+6. Design
 
 Tracker
 
@@ -66,6 +64,7 @@ Tracker
 | 237 | Delete Node in a Linked List | 2.1 Redirecting Nexts |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
+| 355 | Design Twitter | 6 Design |
 | 390 | Elimination Game | 5 Dynamic Programming |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 416 | Partition Equal Subset Sum | 5 Dynamic Programming |
@@ -79,6 +78,7 @@ Tracker
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
 | 1304 | Find N Unique Integers Sum up to Zero | 1.3 Index Tracking |
+| 1348 | Tweet Counts per Frequency | 6 Design |
 
 BbB
 1. ~~Median of Arrays = LC 4 Median of Two Sorted Arrays~~
