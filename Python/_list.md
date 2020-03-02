@@ -73,6 +73,7 @@ Tracker
 | 622 | Design Circular Queue | 3.2 Queues |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
 | 967 | Numbers with same consecutive differences | 5 Dynamic Programming |
+| 984 | String Without AAA or BBB | 5 Math |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
 | 991 | Broken Calculator | 5 Dynamic Programming |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
