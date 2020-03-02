@@ -38,6 +38,7 @@ Tracker
 | 19 | Remove Nth Node from End of List | 2.2 Fast and Slow Pointers |
 | 20 | Valid Parentheses | 3.1 Stacks |
 | 21 | Merge Two Sorted Lists | 2.1 Redirecting Nexts |
+| 22 | Generate Parentheses | 5 Dynamic Programming |
 | 23 | Merge k Sorted Lists | 2.1 Redirecting Nexts |
 | 39 | Combination Sum | 5 Dynamic Programming |
 | 57 | Insert Interval | 1.6 Intervals |
@@ -51,6 +52,7 @@ Tracker
 | 100 | Same Tree | 4.1 Tree Traversal |
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
 | 112 | Path Sum | 4.1 Tree Traversal |
+| 119 | Pascal's Triangle II | 5 Dynamic Programming and Math |
 | 124 | Binary Tree Maximum Path Sum | 4.1 Tree Traversal |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 141 | Linked List Cycle | 2.2 Fast and slow pointers |
@@ -76,10 +78,16 @@ Tracker
 | 984 | String Without AAA or BBB | 5 Math |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
 | 991 | Broken Calculator | 5 Dynamic Programming |
+| 1022 | Sum of Root To Leaf Binary Numbers | 4.1 Tree Traversal |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
+| 1277 | Count Square Submatrices with All Ones | 1.7 Matrices |
+| 1290 | Convert Binary Number in a Linked List to Integer | 2.1 Redirecting Nexts |
+| 1295 | Find Numbers With Even Number of Digits | 1.5 String Functions |
 | 1304 | Find N Unique Integers Sum up to Zero | 1.3 Index Tracking |
+| 1323 | Maximum 69 Number | 1.5 String Functions |
 | 1348 | Tweet Counts per Frequency | 6 Design |
+| 1352 | Product of the Last K Numbers | 6 Design |
 
 BbB
 1. ~~Median of Arrays = LC 4 Median of Two Sorted Arrays~~
