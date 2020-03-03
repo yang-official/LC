@@ -49,11 +49,14 @@ Tracker
 | 83 | Remove Duplicates from Sorted List | 2.1 Redirecting Nexts |
 | 90 | Subsets II | 5 Dynamic Programming |
 | 97 | Interleaving Strings | 5 Dynamic Programming |
+| 98 | Validate Binary Search Tree | 4.1 Tree Traversal |
 | 100 | Same Tree | 4.1 Tree Traversal |
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
-| 112 | Path Sum | 4.1 Tree Traversal |
+| 110 | Balanced Binary Tree | 4.1 Tree Traversal |
+| 112 | Path Sum | 4.1 Tree Traversal | 1.3 Index Tracking |
 | 119 | Pascal's Triangle II | 5 Dynamic Programming and Math |
 | 124 | Binary Tree Maximum Path Sum | 4.1 Tree Traversal |
+| 128 | Longest Consecutive Sequence | 1.1 Dictionary Storage |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 141 | Linked List Cycle | 2.2 Fast and slow pointers |
 | 151 | Reverse Words in a String | 1.5 String Functions |
@@ -62,12 +65,14 @@ Tracker
 | 225 | Implement Stack using Queues | 3.2 Queues |
 | 226 | Invert Binary Tree | 4.1 Tree Traversal |
 | 232 | Implement Queues using Stacks | 3.1 Stacks |
+| 234 | Palindrome Linked List | 2.2 Fast and Slow Pointers |
 | 236 | Lowest Common Ancestor of a Binary Tree | 4.1 Tree Traversal |
 | 237 | Delete Node in a Linked List | 2.1 Redirecting Nexts |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 355 | Design Twitter | 6 Design |
 | 390 | Elimination Game | 5 Dynamic Programming |
+| 394 | Decode String | 3.1 Stacks |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 416 | Partition Equal Subset Sum | 5 Dynamic Programming |
 | 442 | Find all duplicates in an array | 1.1 Dictionary Storage |
@@ -94,7 +99,7 @@ BbB
 2. 0-1 Knapsack ~ LC 416 Partition Equal Subset Sum, 518 Coin Change 2
 3. Matrix Product ~ LC 64 Minimum Path Sum
 4. ~~Find Duplicates = LC 442 Find all duplicates in an array~~
-5. Consecutive Array = LC 128 Longest Consecutive Sequence
+5. ~~Consecutive Array = LC 128 Longest Consecutive Sequence~~
 6. ~~Zero Matrix = LC 73 Set Matrix Zeroes~~
 7. Square Submatrix = LC 221 Maximal Square
 8. Merge K Arrays = LC 23 Merge k Sorted Lists
@@ -113,13 +118,13 @@ BbB
 21. Tree to Doubly Linked List
 22. Longest Consecutive Branch
 23. ~~Print Reversed Linked List ~ LC 206~~
-24. Balanced Binary Tree
-25. Binary Search Tree Verification
+24. Balanced Binary Tree = LC 110
+25. ~~Binary Search Tree Verification = LC 98~~
 26. Smallest Change
 27. Inorder Traversal
-28. Sort Stacks
+28. ~~Sort Stacks~~
 29. ~~Stack from Queues = LC 225~~
-30. Palindromes
+30. ~~Palindromes = LC 234~~
 31. ~~Max Stack ~ LC 155~~
 32. Two Missing Numbers
 33. Big Int Modules
@@ -132,7 +137,7 @@ BbB
 40. ~~Dedup Linked List ~ LC 83~~
 41. ~~Split a Linked List ~ LC 725~~
 42. ~~Nth to the Last Element ~ LC 19~~
-43. Three Sum
+43. ~~Three Sum = LC 15~~
 44. Tree Level Order
 45. Autocomplete.
 46. String Deletion
