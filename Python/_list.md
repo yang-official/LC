@@ -73,6 +73,7 @@ Tracker
 | 355 | Design Twitter | 6 Design |
 | 390 | Elimination Game | 5 Dynamic Programming |
 | 394 | Decode String | 3.1 Stacks |
+| 406 | Queue Reconstruction by Height | 1.2 Greedy |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 416 | Partition Equal Subset Sum | 5 Dynamic Programming |
 | 442 | Find all duplicates in an array | 1.1 Dictionary Storage |
@@ -83,6 +84,7 @@ Tracker
 | 984 | String Without AAA or BBB | 5 Math |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
 | 991 | Broken Calculator | 5 Dynamic Programming |
+| 994 | Rotting Oranges | 4.2 Graph Traversal |
 | 1022 | Sum of Root To Leaf Binary Numbers | 4.1 Tree Traversal |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |

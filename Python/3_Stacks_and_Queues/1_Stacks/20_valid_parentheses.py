@@ -39,10 +39,10 @@ def isValid(s):
 # optimized by left check first
 def isValid(s):
     stack = []
-    bracket = {'(': ')','[': ']','{': '}'}
-    for item in s:
-        if item in bracket:
-            stack.append(bracket[item])
-        elif not stack or stack.pop() != item:
+    d = {'(':')','[':']','{':'}'}
+    for e in s:
+        if e in d:
+            stack.append(d[e])
+        elif not stack or stack.pop() != e:
             return False
     return len(stack) == 0
