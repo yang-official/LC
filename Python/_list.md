@@ -33,6 +33,8 @@ Tracker
 | 6 | Zigzag Conversion | 1.3 Index Tracking |
 | 7 | Reverse Integer | 1.5 String Functions |
 | 8 | String to Integer | 1.5 String Functions |
+| 9 | Palindrome Number | 1.5 String Functions |
+| 10 | Regular Expression Matching | 5 Dynamic Programming |
 | 11 | Container with Most Water | 1.3 Index Tracking |
 | 15 | 3Sum | 1.3 Index Tracking |
 | 19 | Remove Nth Node from End of List | 2.2 Fast and Slow Pointers |
@@ -41,6 +43,7 @@ Tracker
 | 22 | Generate Parentheses | 5 Dynamic Programming |
 | 23 | Merge k Sorted Lists | 2.1 Redirecting Nexts |
 | 39 | Combination Sum | 5 Dynamic Programming |
+| 56 | Merge Interval | 1.6 Intervals |
 | 57 | Insert Interval | 1.6 Intervals |
 | 70 | Climbing Stairs | 5 Dynamic Programming |
 | 73 | Set Matrix Zeros | 1.7 Matrices |
@@ -54,6 +57,7 @@ Tracker
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
 | 110 | Balanced Binary Tree | 4.1 Tree Traversal |
 | 112 | Path Sum | 4.1 Tree Traversal | 1.3 Index Tracking |
+| 116 | Populating Next Right Pointers in Each Node | 1.4 Tree Traversal |
 | 119 | Pascal's Triangle II | 5 Dynamic Programming and Math |
 | 124 | Binary Tree Maximum Path Sum | 4.1 Tree Traversal |
 | 128 | Longest Consecutive Sequence | 1.1 Dictionary Storage |
@@ -79,7 +83,9 @@ Tracker
 | 442 | Find all duplicates in an array | 1.1 Dictionary Storage |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
 | 622 | Design Circular Queue | 3.2 Queues |
+| 680 | Valid Palindrome II | 1.3 Index Tracking |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
+| 912 | Sort an Array | 5 Dynamic Programming |
 | 967 | Numbers with same consecutive differences | 5 Dynamic Programming |
 | 984 | String Without AAA or BBB | 5 Math |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
