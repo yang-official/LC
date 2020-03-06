@@ -51,10 +51,13 @@ Tracker
 | 78 | Subsets | 5 Dynamic Programming |
 | 83 | Remove Duplicates from Sorted List | 2.1 Redirecting Nexts |
 | 90 | Subsets II | 5 Dynamic Programming |
+| 91 | Decode Ways | 5 Dynamic Programming |
 | 97 | Interleaving Strings | 5 Dynamic Programming |
 | 98 | Validate Binary Search Tree | 4.1 Tree Traversal |
 | 100 | Same Tree | 4.1 Tree Traversal |
+| 102 | Binary Tree Level Order Traversal | 4.1 Tree Traversal |
 | 104 | Find Maximum Depth of Tree | 4.1 Tree Traversal |
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | 4.1 Tree Traversal |
 | 110 | Balanced Binary Tree | 4.1 Tree Traversal |
 | 112 | Path Sum | 4.1 Tree Traversal | 1.3 Index Tracking |
 | 116 | Populating Next Right Pointers in Each Node | 1.4 Tree Traversal |
@@ -65,6 +68,7 @@ Tracker
 | 141 | Linked List Cycle | 2.2 Fast and slow pointers |
 | 151 | Reverse Words in a String | 1.5 String Functions |
 | 206 | Reverse Linked List | 2.1 Redirecting Nexts |
+| 210 | Course Schedule II | 4.2 Graph Traversal |
 | 217 | Contains Duplicate | 1.1 Dictionary Storage |
 | 225 | Implement Stack using Queues | 3.2 Queues |
 | 226 | Invert Binary Tree | 4.1 Tree Traversal |
@@ -74,6 +78,7 @@ Tracker
 | 237 | Delete Node in a Linked List | 2.1 Redirecting Nexts |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
+| 323 | Number of Connected Components in an Undirected Graph | 4.2 Graph Traversal |
 | 355 | Design Twitter | 6 Design |
 | 390 | Elimination Game | 5 Dynamic Programming |
 | 394 | Decode String | 3.1 Stacks |
