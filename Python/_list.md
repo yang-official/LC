@@ -45,11 +45,13 @@ Tracker
 | 39 | Combination Sum | 5 Dynamic Programming |
 | 56 | Merge Interval | 1.6 Intervals |
 | 57 | Insert Interval | 1.6 Intervals |
+| 64 | Minimum Path Sum | 1.7 Matrices |
 | 70 | Climbing Stairs | 5 Dynamic Programming |
 | 73 | Set Matrix Zeros | 1.7 Matrices |
 | 76 | Minimum Window Substring | 1.3 Index Tracking |
 | 78 | Subsets | 5 Dynamic Programming |
 | 83 | Remove Duplicates from Sorted List | 2.1 Redirecting Nexts |
+| 88 | Merge Sorted Arrays | 1.3 Index Tracking |
 | 90 | Subsets II | 5 Dynamic Programming |
 | 91 | Decode Ways | 5 Dynamic Programming |
 | 97 | Interleaving Strings | 5 Dynamic Programming |
@@ -80,6 +82,7 @@ Tracker
 | 268 | Missing Number | 1.1 Dictionary Storage |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 323 | Number of Connected Components in an Undirected Graph | 4.2 Graph Traversal |
+| 344 | Reverse String | 1.5 String Functions |
 | 355 | Design Twitter | 6 Design |
 | 371 | Sum of Two Integers | 1.8 Bits |
 | 390 | Elimination Game | 5 Dynamic Programming |
@@ -90,6 +93,7 @@ Tracker
 | 442 | Find All duplicates in an array | 1.1 Dictionary Storage |
 | 448 | Find All Numbers Disappeared in an Array | 1.1 Dictionary Storage |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
+| 560 | Subarray Sum Equals K | 1.1 Dictionary Storage |
 | 622 | Design Circular Queue | 3.2 Queues |
 | 680 | Valid Palindrome II | 1.3 Index Tracking |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
@@ -116,15 +120,15 @@ Tracker
 BbB
 1. ~~Median of Arrays = LC 4 Median of Two Sorted Arrays~~
 2. 0-1 Knapsack ~ LC 416 Partition Equal Subset Sum, 518 Coin Change 2
-3. Matrix Product ~ LC 64 Minimum Path Sum
+3. ~~Matrix Product ~ LC 64 Minimum Path Sum~~
 4. ~~Find Duplicates = LC 442 Find all duplicates in an array~~
 5. ~~Consecutive Array = LC 128 Longest Consecutive Sequence~~
 6. ~~Zero Matrix = LC 73 Set Matrix Zeroes~~
 7. Square Submatrix = LC 221 Maximal Square
 8. Merge K Arrays = LC 23 Merge k Sorted Lists
 9. Matrix Search = LC 74 Search a 2D Matrix
-10. Merge Arrays = LC 88 Merge Sorted Array
-11. Zero Sum Subarray ~ LC 560 Subarray Sum Equals K
+10. ~~Merge Arrays = LC 88 Merge Sorted Array~~
+11. ~~Zero Sum Subarray ~ LC 560 ~ LC 53~~
 12. Permutations
 13. N Stacks ~ LC 1172 Dinner Plate Stacks
 14. Anagrams
@@ -133,7 +137,7 @@ BbB
 17. Random Binary Tree
 18. ~~Lowest Common Ancestor = LC 236~~
 19. ~~Sum = LC 317~~
-20. Reverse Stack
+20. ~~Reverse Stack~~
 21. Tree to Doubly Linked List
 22. Longest Consecutive Branch
 23. ~~Print Reversed Linked List ~ LC 206~~
@@ -158,7 +162,7 @@ BbB
 42. ~~Nth to the Last Element ~ LC 19~~
 43. ~~Three Sum = LC 15~~
 44. Tree Level Order
-45. Autocomplete.
+45. Autocomplete
 46. String Deletion
 47. Longest common substring
 48. String compression
