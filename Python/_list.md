@@ -77,19 +77,23 @@ Tracker
 | 236 | Lowest Common Ancestor of a Binary Tree | 4.1 Tree Traversal |
 | 237 | Delete Node in a Linked List | 2.1 Redirecting Nexts |
 | 238 | Product of Array Except Itself | 1.3 Index Tracking |
+| 268 | Missing Number | 1.1 Dictionary Storage |
 | 295 | Find Median From Data Stream | 1.4 Binary Search |
 | 323 | Number of Connected Components in an Undirected Graph | 4.2 Graph Traversal |
 | 355 | Design Twitter | 6 Design |
+| 371 | Sum of Two Integers | 1.8 Bits |
 | 390 | Elimination Game | 5 Dynamic Programming |
 | 394 | Decode String | 3.1 Stacks |
 | 406 | Queue Reconstruction by Height | 1.2 Greedy |
 | 415 | Add Strings | 1.3 Index Tracking |
 | 416 | Partition Equal Subset Sum | 5 Dynamic Programming |
-| 442 | Find all duplicates in an array | 1.1 Dictionary Storage |
+| 442 | Find All duplicates in an array | 1.1 Dictionary Storage |
+| 448 | Find All Numbers Disappeared in an Array | 1.1 Dictionary Storage |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
 | 622 | Design Circular Queue | 3.2 Queues |
 | 680 | Valid Palindrome II | 1.3 Index Tracking |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
+| 865 | Smallest Subtree with all the Deepest Nodes | 4.1 Tree Traversal |
 | 912 | Sort an Array | 5 Dynamic Programming |
 | 967 | Numbers with same consecutive differences | 5 Dynamic Programming |
 | 984 | String Without AAA or BBB | 5 Math |
@@ -99,6 +103,8 @@ Tracker
 | 1022 | Sum of Root To Leaf Binary Numbers | 4.1 Tree Traversal |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
+| 1145 | Binary Tree Coloring Game | 4.1 Tree Traversal |
+| 1200 | Minimum Absolute Difference | |
 | 1277 | Count Square Submatrices with All Ones | 1.7 Matrices |
 | 1290 | Convert Binary Number in a Linked List to Integer | 2.1 Redirecting Nexts |
 | 1295 | Find Numbers With Even Number of Digits | 1.5 String Functions |
@@ -126,7 +132,7 @@ BbB
 16. Shortest Path
 17. Random Binary Tree
 18. ~~Lowest Common Ancestor = LC 236~~
-19. Sum
+19. ~~Sum = LC 317~~
 20. Reverse Stack
 21. Tree to Doubly Linked List
 22. Longest Consecutive Branch
@@ -139,7 +145,7 @@ BbB
 29. ~~Stack from Queues = LC 225~~
 30. ~~Palindromes = LC 234~~
 31. ~~Max Stack ~ LC 155~~
-32. Two Missing Numbers
+32. ~~Two Missing Numbers ~ LC 268 ~ LC 448~~
 33. Big Int Modules
 34. Swap Varibles
 35. Gray Code
