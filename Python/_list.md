@@ -70,6 +70,7 @@ Tracker
 | 119 | Pascal's Triangle II | 5 Dynamic Programming and Math |
 | 124 | Binary Tree Maximum Path Sum | 4.1 Tree Traversal |
 | 128 | Longest Consecutive Sequence | 1.1 Dictionary Storage |
+| 130 | Surrounded Regions | 3.3 BFS and DFS |
 | 138 | Copy List with Random Pointer | 3.1 Redirecting Next |
 | 141 | Linked List Cycle | 2.2 Fast and slow pointers |
 | 151 | Reverse Words in a String | 1.5 String Functions |
@@ -102,6 +103,8 @@ Tracker
 | 443 | String Compression | 1.3 Index Tracking |
 | 448 | Find All Numbers Disappeared in an Array | 1.1 Dictionary Storage |
 | 509 | Fibonacci Number | 5 Dynamic Programming |
+| 513 | Find Bottom Left Tree Value | 4.1 Tree Traversal |
+| 515 | Find Largest Value in Each Tree Row | 4.1 Tree Traversal |
 | 543 | Diameter of Binary Tree | 4.1 Tree Traversal |
 | 560 | Subarray Sum Equals K | 1.1 Dictionary Storage |
 | 622 | Design Circular Queue | 3.2 Queues |
@@ -114,7 +117,7 @@ Tracker
 | 984 | String Without AAA or BBB | 5 Math |
 | 987 | Vertical Order of a Binary Tree | 4.1 Tree Traversal |
 | 991 | Broken Calculator | 5 Dynamic Programming |
-| 994 | Rotting Oranges | 4.2 Graph Traversal |
+| 994 | Rotting Oranges | 3.3 BFS and DFS |
 | 1022 | Sum of Root To Leaf Binary Numbers | 4.1 Tree Traversal |
 | 1047 | Remove All Adjacent Duplicates in String | 3.1 Stacks |
 | 1110 | Delete Nodes and return forest | 4.1 Tree Traversal |
