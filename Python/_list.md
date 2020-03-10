@@ -107,6 +107,7 @@ Tracker
 | 622 | Design Circular Queue | 3.2 Queues |
 | 680 | Valid Palindrome II | 1.3 Index Tracking |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
+| 811 | Subdomain Visit Count | 1.1 Dictionary Storage |
 | 865 | Smallest Subtree with all the Deepest Nodes | 4.1 Tree Traversal |
 | 912 | Sort an Array | 5 Dynamic Programming |
 | 967 | Numbers with same consecutive differences | 5 Dynamic Programming |
@@ -123,6 +124,7 @@ Tracker
 | 1290 | Convert Binary Number in a Linked List to Integer | 2.1 Redirecting Nexts |
 | 1295 | Find Numbers With Even Number of Digits | 1.5 String Functions |
 | 1304 | Find N Unique Integers Sum up to Zero | 1.3 Index Tracking |
+| 1306 | Jump Game III | 3.3 BFS and DFS |
 | 1323 | Maximum 69 Number | 1.5 String Functions |
 | 1348 | Tweet Counts per Frequency | 6 Design |
 | 1352 | Product of the Last K Numbers | 6 Design |
