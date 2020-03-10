@@ -126,6 +126,7 @@ Tracker
 | 1323 | Maximum 69 Number | 1.5 String Functions |
 | 1348 | Tweet Counts per Frequency | 6 Design |
 | 1352 | Product of the Last K Numbers | 6 Design |
+| 1365 | How Many Numbers Are Smaller Than the Current Number | 1.1 Dictionary Storage |
 
 BbB
 1. ~~Median of Arrays = LC 4 Median of Two Sorted Arrays~~
