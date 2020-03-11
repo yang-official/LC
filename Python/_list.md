@@ -76,6 +76,7 @@ Tracker
 | 151 | Reverse Words in a String | 1.5 String Functions |
 | 191 | Number of 1 Bits | 1.8 Bits |
 | 206 | Reverse Linked List | 2.1 Redirecting Nexts |
+| 207 | Course Schedule | 4.2 Graph Traversal |
 | 210 | Course Schedule II | 4.2 Graph Traversal |
 | 217 | Contains Duplicate | 1.1 Dictionary Storage |
 | 221 | Maximal Square | 1.7 Matrices |
@@ -110,6 +111,7 @@ Tracker
 | 622 | Design Circular Queue | 3.2 Queues |
 | 680 | Valid Palindrome II | 1.3 Index Tracking |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
+| 767 | Reorganize String | 4.4 Heaps |
 | 811 | Subdomain Visit Count | 1.1 Dictionary Storage |
 | 865 | Smallest Subtree with all the Deepest Nodes | 4.1 Tree Traversal |
 | 912 | Sort an Array | 5 Dynamic Programming |
