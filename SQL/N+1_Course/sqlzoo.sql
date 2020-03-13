@@ -122,3 +122,23 @@ SELECT matchid, mdate, COUNT(*) FROM game JOIN goal ON matchid = id WHERE teamid
 SELECT mdate, team1, SUM(CASE WHEN teamid = team1 THEN 1 ELSE 0 END) AS score1,
        team2, SUM(CASE WHEN teamid = team2 THEN 1 ELSE 0 END) AS score2
        FROM game LEFT JOIN goal ON (id = matchid) GROUP BY mdate,team1,team2 ORDER BY mdate, matchid, team1, team2;
+
+
+-- Window functions
+SELECT party, votes,
+       RANK() OVER (ORDER BY votes DESC) as posn
+  FROM ge
+ WHERE constituency = 'S14000024' AND yr = 2017
+ORDER BY party
+
+SELECT yr,party, votes,
+      RANK() OVER (PARTITION BY yr ORDER BY votes DESC) as posn
+  FROM ge
+ WHERE constituency = 'S14000021'
+ORDER BY party,yr
+
+SELECT constituency,party, votes, RANK() OVER (PARTITION BY constituency ORDER BY votes DESC) as posn
+  FROM ge
+ WHERE constituency BETWEEN 'S14000021' AND 'S14000026'
+   AND yr  = 2017
+ORDER BY posn, constituency
