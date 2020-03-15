@@ -2,21 +2,18 @@
 -- SELECT
 -- ranking
 
-SELECT
-    col,
-    RANK() OVER (
-        ORDER BY col
-    ) myrank
-FROM
-    t;
-
-SELECT
-    col,
-    RANK() OVER (
-        ORDER BY col
-    ) myrank
-FROM
-    t;
+-- Percentage of customers that are female
+-- TO figure out
+-- Count of distinct states
+SELECT COUNT(DISTINCT states) AS count_distinct_states FROM stores;
+-- Number of products having more than 5 sales
+SELECT state, COUNT(product_id)
+FROM stores st
+JOIN
+(SELECT store_id, product_id, SUM(units_sold) as sold FROM sales
+GROUP BY product_id
+HAVING sold > 5) AS sa
+ON st.store_id = sa.store_id;
 
 /* What is the total percentage of sales of a product compared to sales */
 -- aggregate functions
