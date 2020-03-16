@@ -16,6 +16,8 @@ Ordering results using rankings or clever self-joins
 178. Rank Scores
 180. Consecutive Numbers
 185. Department Top Three Salaries
+197. Rising Temperatures
+597. Friend Requests I: Overall Aceptance
 
 #### Group
 Grouping and aggregating

@@ -110,6 +110,8 @@ Tracker
 | 560 | Subarray Sum Equals K | 1.1 Dictionary Storage |
 | 622 | Design Circular Queue | 3.2 Queues |
 | 680 | Valid Palindrome II | 1.3 Index Tracking |
+| 706 | Design Hashmap | 6 Design |
+| 707 | Design Linked List | 6 Design |
 | 725 | Split Linked List in Parts | 2.1 Redirecting Nexts |
 | 767 | Reorganize String | 4.4 Heaps |
 | 811 | Subdomain Visit Count | 1.1 Dictionary Storage |
