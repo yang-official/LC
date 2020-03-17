@@ -1,7 +1,23 @@
 # SQL
 Listing as of 2020-02-17
 
-#### Join
+#### 1 Select
+Select, Select within Select
+176. Second Highest Salary
+177. Nth Highest Salary
+180. Consecutive Numbers
+597. Friend Requests I: Overall Acceptance
+
+#### 2 Group
+Grouping and aggregating
+182. Duplicate Emails
+196. Delete Duplicate Emails
+262. Trips and Users
+511. Game Play Analysis I
+512. Game Play Analysis II
+570. Managers with at Least 5 Direct Reports
+
+#### 3 Join
 Inner, Outer, Left, Right, Self Joins; Subquery Joins
 175. Combine Two Tables
 181. Employees Earning More Than Their Managers
@@ -9,30 +25,22 @@ Inner, Outer, Left, Right, Self Joins; Subquery Joins
 184. Department Highest Salary
 513. Game Play Analysis III
 
-#### Rank
-Ordering results using rankings or clever self-joins
-176. Second Highest Salary
-177. Nth Highest Salary
+#### 4 Windows
+Using Window Functions
 178. Rank Scores
-180. Consecutive Numbers
 185. Department Top Three Salaries
 197. Rising Temperatures
-597. Friend Requests I: Overall Aceptance
 
-#### Group
-Grouping and aggregating
-181. Duplicate Emails
-196. Delete Duplicate Emails
-197. Rising Temperature
-262. Trips and Users
-511. Game Play Analysis I
-512. Game Play Analysis II
+#### 5 Variables
+Using Variables
 569. Median Employee Salary
-570. Managers with at Least 5 Direct Reports
+571. Find Median Given Frequency of Numbers
+
+
+
 
 #### To Do/Organize
 Unsolved and uncategorized problems
-571. Find Median Given Frequency of Numbers
 574. Winning Candidate
 577. Employee Bonus
 578. Get Highest Answer Rate Question

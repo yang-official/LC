@@ -30,6 +30,6 @@ each of those people:
 FirstName, LastName, City, State
 */
 
-SELECT FirstName, LastName, City, State
-FROM Person LEFT JOIN Address
-ON Person.PersonId = Addres.PersonId;
+select FirstName, LastName, City, State
+from Person left join Address
+on Person.PersonId = Address.PersonId;
