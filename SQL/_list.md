@@ -6,7 +6,9 @@ Select, Select within Select
 176. Second Highest Salary
 177. Nth Highest Salary
 180. Consecutive Numbers
+595. Big Countries
 597. Friend Requests I: Overall Acceptance
+620. Not Boring Movies
 
 #### 2 Group
 Grouping and aggregating
@@ -16,6 +18,7 @@ Grouping and aggregating
 511. Game Play Analysis I
 512. Game Play Analysis II
 570. Managers with at Least 5 Direct Reports
+596. Classes More Than 5 Students
 
 #### 3 Join
 Inner, Outer, Left, Right, Self Joins; Subquery Joins
@@ -48,10 +51,7 @@ Unsolved and uncategorized problems
 584. Find Customer Referee
 585. Investments in 2016
 586. Customer Placing the Largest Number of Orders
-595. Big Countries
-596. Classes More Than 5 Students
 601. Human Traffic of Stadium
-620. Not Boring Movies
 626. Exchange Seats
 627. Swap Salary
 etc.
