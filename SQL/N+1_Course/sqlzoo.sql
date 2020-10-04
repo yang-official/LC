@@ -122,23 +122,99 @@ SELECT matchid, mdate, COUNT(*) FROM game JOIN goal ON matchid = id WHERE teamid
 SELECT mdate, team1, SUM(CASE WHEN teamid = team1 THEN 1 ELSE 0 END) AS score1,
        team2, SUM(CASE WHEN teamid = team2 THEN 1 ELSE 0 END) AS score2
        FROM game LEFT JOIN goal ON (id = matchid) GROUP BY mdate,team1,team2 ORDER BY mdate, matchid, team1, team2;
---
+-- more JOINs
+SELECT id, title FROM movie WHERE yr = 1962;
+SELECT yr FROM movie WHERE title = 'Citizen Kane';
+SELECT id, title, yr FROM movie WHERE title LIKE '%Star Trek%' ORDER BY yr;
+SELECT id FROM actor WHERE name = 'Glenn Close';
+SELECT id FROM movie WHERE title = 'Casablanca';
+SELECT name FROM actor JOIN casting on actor.id = casting.actorid WHERE movieid = (SELECT id FROM movie WHERE title = 'Casablanca');
+SELECT name FROM actor join casting on id = actorid WHERE movieid = (SELECT id FROM movie WHERE title = 'Alien');
+SELECT title FROM movie JOIN casting on movie.id = casting.movieid JOIN actor on actor.id = casting.actorid WHERE actor.name = 'Harrison Ford';
+SELECT title FROM movie JOIN casting on movie.id = casting.movieid JOIN actor on actor.id = casting.actorid WHERE actor.name = 'Harrison Ford' AND ord != 1;
+SELECT title, name FROM movie JOIN casting ON movie.id = casting.movieid JOIN actor ON actor.id = casting.actorid WHERE yr = 1962 AND ord = 1;
+SELECT yr,COUNT(title) FROM movie JOIN casting ON movie.id=movieid JOIN actor ON actorid=actor.id WHERE name='Rock Hudson' GROUP BY yr HAVING COUNT(title) > 2;
+SELECT title, name FROM movie JOIN casting ON movie.id = movieid JOIN actor ON actor.id = actorid WHERE movie.id IN (SELECT movie.id FROM movie JOIN casting ON movie.id = movieid JOIN actor ON actor.id = actorid WHERE name = 'Julie Andrews') AND ord = 1;
+SELECT name FROM actor JOIN casting ON id = actorid WHERE ord = 1 GROUP BY name HAVING COUNT(*) >= 15 ORDER BY name;
+SELECT title, COUNT(actorid) FROM movie JOIN casting on movie.id = movieid JOIN actor ON actor.id = actorid WHERE yr = 1978 GROUP BY title ORDER BY COUNT(actorid) DESC, title;
+SELECT name FROM actor JOIN casting ON id = actorid WHERE name != 'Art Garfunkel' AND movieid in (SELECT movieid FROM actor JOIN casting ON actor.id = actorid WHERE name = 'Art Garfunkel');
+--NULL, INNER JOIN, LEFT JOIN, RIGHT JOIN
+SELECT name FROM teacher WHERE dept IS NULL;
+SELECT teacher.name, dept.name FROM teacher INNER JOIN dept ON (teacher.dept=dept.id);
+SELECT teacher.name, dept.name FROM teacher LEFT JOIN dept ON (teacher.dept=dept.id);
+SELECT teacher.name, dept.name FROM teacher RIGHT JOIN dept ON (teacher.dept=dept.id);
+SELECT name, COALESCE(mobile, '07986 444 2266') FROM teacher;
+SELECT teacher.name, COALESCE(dept.name, 'None') FROM teacher LEFT JOIN dept ON teacher.dept = dept.id;
+SELECT COUNT(name), COUNT(mobile) FROM teacher;
+SELECT dept.name, COUNT(teacher.name) FROM teacher RIGHT JOIN dept ON teacher.dept = dept.id GROUP BY dept.name;
+-- CASE WHEN condition1 THEN value1 WHEN condition2 THE value2 ELSE def_value END
+SELECT name, CASE WHEN dept in (1, 2) THEN 'Sci' ELSE 'Art' END FROM teacher;
+SELECT name, CASE WHEN dept in (1, 2) THEN 'Sci' WHEN dept = 3 THEN 'Art' ELSE 'None' END FROM teacher;
+-- Self JOIN
+SELECT count(id) FROM stops;
+SELECT id FROM stops WHERE name = 'Craiglockhart';
+SELECT id, name FROM stops JOIN route ON route.stop = stops.id WHERE num = '4' AND company = 'LRT';
+SELECT company, num, COUNT(*) FROM route WHERE stop=149 OR stop=53 GROUP BY company, num HAVING COUNT(*) = 2;
+SELECT a.company, a.num, a.stop, b.stop FROM route a JOIN route b ON (a.company=b.company AND a.num=b.num) WHERE a.stop=53 AND b.stop = (SELECT id FROM stops WHERE name = 'London Road');
+SELECT a.company, a.num, stopa.name, stopb.name FROM route a JOIN route b ON (a.company=b.company AND a.num=b.num) JOIN stops stopa ON (a.stop=stopa.id) JOIN stops stopb ON (b.stop=stopb.id) WHERE stopa.name='Craiglockhart' AND stopb.name='London Road';
+SELECT DISTINCT a.company, a.num FROM route a JOIN route b ON a.company=b.company AND a.num = b.num WHERE a.stop = 115 AND b.stop = 137;
+SELECT a.company, a.num FROM route a JOIN route b on a.company=b.company AND a.num=b.num JOIN stops stopa ON stopa.id=a.stop JOIN stops stopb ON stopb.id=b.stop WHERE stopa.name='Craiglockhart' AND stopb.name='Tollcross';
+SELECT DISTINCT stopb.name, a.company, a.num FROM route a JOIN route b on a.company=b.company AND a.num=b.num JOIN stops stopa ON stopa.id=a.stop JOIN stops stopb ON stopb.id=b.stop WHERE stopa.name='Craiglockhart';
+SELECT a.num, a.company, stopb.name, c.num, c.company
+FROM route a
+JOIN route b ON a.company=b.company AND a.num = b.num
+JOIN route c ON b.stop=c.stop
+JOIN route d ON c.company=d.company AND c.num=d.num
+JOIN stops stopa ON a.stop=stopa.id
+JOIN stops stopb ON b.stop=stopb.id
+JOIN stops stopc ON c.stop=stopc.id
+JOIN stops stopd ON d.stop=stopd.id
+WHERE stopa.name='Craiglockhart' AND stopd.name='Lochend';
+
 
 -- Window functions
+SELECT lastName, party, votes
+  FROM ge
+ WHERE constituency = 'S14000024' AND yr = 2017
+ORDER BY votes DESC;
+
 SELECT party, votes,
        RANK() OVER (ORDER BY votes DESC) as posn
   FROM ge
  WHERE constituency = 'S14000024' AND yr = 2017
-ORDER BY party
+ORDER BY party;
 
 SELECT yr,party, votes,
       RANK() OVER (PARTITION BY yr ORDER BY votes DESC) as posn
   FROM ge
  WHERE constituency = 'S14000021'
-ORDER BY party,yr
+ORDER BY party,yr;
 
 SELECT constituency,party, votes, RANK() OVER (PARTITION BY constituency ORDER BY votes DESC) as posn
   FROM ge
  WHERE constituency BETWEEN 'S14000021' AND 'S14000026'
    AND yr  = 2017
-ORDER BY posn, constituency
+ORDER BY posn, constituency;
+
+SELECT constituency, party
+  FROM (
+    SELECT constituency,party,
+      RANK() OVER (PARTITION BY constituency ORDER BY votes DESC)
+        AS posn
+      FROM ge
+     WHERE constituency BETWEEN 'S14000021' AND 'S14000026'
+       AND yr  = 2017
+   ) AS ed
+WHERE posn = 1;
+
+SELECT party,COUNT(1)
+  FROM (
+    SELECT constituency,party,
+      RANK() OVER (PARTITION BY constituency ORDER BY votes DESC)
+        AS posn
+      FROM ge
+     WHERE constituency LIKE 'S%'
+       AND yr  = 2017
+   ) AS ed
+WHERE posn = 1
+GROUP BY party;
