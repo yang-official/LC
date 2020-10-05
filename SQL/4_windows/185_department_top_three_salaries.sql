@@ -46,3 +46,11 @@ FROM employee e1 JOIN department d ON e1.DepartmentId = d.Id
 JOIN employee e2 ON e1.DepartmentId = e2.DepartmentId AND e1.Salary <= e2.Salary
 GROUP BY e1.Name, e1.Salary, e1.DepartmentId
 HAVING count(distinct e2.Salary) <= 3;
+
+SELECT Department, Employee, Salary
+FROM (
+    SELECT Department.Name AS Department, Employee.Name AS Employee, Salary,
+    DENSE_RANK() OVER (PARTITION BY Department.Id ORDER BY Salary DESC) AS posn
+    FROM Department JOIN Employee ON DepartmentId = Department.Id
+) AS ord
+WHERE posn <= 3;

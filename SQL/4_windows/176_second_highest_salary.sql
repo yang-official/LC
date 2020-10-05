@@ -35,6 +35,14 @@ INSERT INTO Employee (Id, Salary) VALUES
 (4, 200);
 */
 
+SELECT
+  CASE WHEN COUNT(1) > 0 THEN Salary ELSE NULL END AS SecondHighestSalary
+FROM (
+  SELECT Salary, RANK() OVER (ORDER BY Salary DESC) AS posn
+  FROM Employee
+) AS ord
+WHERE posn = 2;
+
 SELECT MAX(Salary) AS SecondHighestSalary
 FROM Employee
 WHERE Salary < (
